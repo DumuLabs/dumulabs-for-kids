@@ -1,14 +1,17 @@
 // src/utils/payments.ts
-import {type PaymentPayload, type GatewayResponse } from '../types';
+import {
+  //type PaymentPayload, 
+  type GatewayResponse 
+} from '../types';
 
 /**
  * Safaricom Daraja API Integration Handler
  * Initiates an M-Pesa Express STK Push (Lipa Na M-Pesa Online)
  */
 export const initiateDarajaStkPush = async (
-  amount: number, 
-  phoneNumber: string,
-  planId: string
+  // amount: number, 
+  // phoneNumber: string,
+  // planId: string
 ): Promise<GatewayResponse> => {
   return new Promise((resolve) => {
     // Simulated network delay
@@ -29,7 +32,7 @@ export const initiateDarajaStkPush = async (
  * Processes multi-channel paths via a unified open-source engine
  */
 export const processUnifiedGatewayPayment = async (
-  payload: PaymentPayload
+  // payload: PaymentPayload
 ): Promise<GatewayResponse> => {
   return new Promise((resolve) => {
     // Simulated network delay
