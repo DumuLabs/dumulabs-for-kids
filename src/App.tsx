@@ -127,6 +127,7 @@ export default function App() {
       if (response.success) {
         setTimeout(() => setPaymentSuccess(true), 1500); 
       }
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     } catch (error) {
       setStatusMsg('An error occurred during transaction routing.');
 
